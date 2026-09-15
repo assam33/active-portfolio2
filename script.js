@@ -1,14 +1,14 @@
 /* ---------------- Data ---------------- */
 const projects = [
-  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"assets/images/n.png"},
-  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"assets/images/nn.png"},
-  {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"assets/images/nnnn.png"},
-  {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"assets/images/nnnnn.png"},
-  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"assets/images/pf.png"},
-  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"assets/images/pf.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"}
+  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/n.png" , link: "https://pos-web-n.vercel.app/login"},
+  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nn.png" , link: "https://pos-web-n.vercel.app/login"},
+  {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnn.png" , link: "https://jatala-rice-mills.vercel.app/login"},
+  {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnnn.png" , link: "https://jatala-rice-mills.vercel.app/login"},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png" , link: ""},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png" , link: ""},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png" , link: ""},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png" , link: ""},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png" , link: ""}
 ];
 
 // Blog's Data     
@@ -24,18 +24,24 @@ const projectGrid = document.getElementById('projectGrid');
 function renderProjects(filter){
   projectGrid.innerHTML = projects
     .filter(p => filter === 'all' || p.cat === filter)
-    .map(p => `
-      <div class="project-card">
+.map(p => `
+    <div class="project-card">
+
         <div class="project-thumb">
-          <img src="${p.img}" alt="${p.name}" loading="lazy">
-          <div class="view-overlay">VIEW PROJECT</div>
+            <img src="${p.img}" alt="${p.name}" loading="lazy">
+
+            <a href="${p.link}" class="view-overlay">
+                VIEW PROJECT
+            </a>
         </div>
+
         <div class="project-info">
-          <div class="p-title">${p.name}</div>
-          <div class="p-cat">${p.catLabel}</div>
+            <div class="p-title">${p.name}</div>
+            <div class="p-cat">${p.catLabel}</div>
         </div>
-      </div>
-    `).join('');
+
+    </div>
+`).join('');
 }
 renderProjects('all');
 
