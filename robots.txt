@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://assam-portfolio-three.vercel.app/sitemap.xml
