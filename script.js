@@ -1,14 +1,14 @@
 /* ---------------- Data ---------------- */
 const projects = [
-  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/n.png"},
-  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nn.png"},
-  {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnn.png"},
-  {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnnn.png"},
-  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png"},
-  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"},
-  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"}
+  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"assets/images/n.png"},
+  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"assets/images/nn.png"},
+  {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"assets/images/nnnn.png"},
+  {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"assets/images/nnnnn.png"},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"assets/images/pf.png"},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"assets/images/pf.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"assets/images/pff.png"}
 ];
 
 // Blog's Data     
