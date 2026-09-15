@@ -30,7 +30,7 @@ function renderProjects(filter){
         <div class="project-thumb">
             <img src="${p.img}" alt="${p.name}" loading="lazy">
 
-            <a href="${p.link}" target="_blank" class="view-overlay">
+            <a href="${p.link}" class="view-overlay">
                 VIEW PROJECT
             </a>
         </div>
