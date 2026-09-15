@@ -1,16 +1,17 @@
 /* ---------------- Data ---------------- */
 const projects = [
-  {name:"Pulseboard", cat:"dev", catLabel:"Web development", img:"https://picsum.photos/seed/pulseboard/600/450"},
-  {name:"Northline", cat:"design", catLabel:"Web design", img:"https://picsum.photos/seed/northline/600/450"},
-  {name:"Parcelly", cat:"apps", catLabel:"Applications", img:"https://picsum.photos/seed/parcelly/600/450"},
-  {name:"Stacknote", cat:"apps", catLabel:"Applications", img:"https://picsum.photos/seed/stacknote/600/450"},
-  {name:"Cobalt UI", cat:"design", catLabel:"Web design", img:"https://picsum.photos/seed/cobaltui/600/450"},
-  {name:"Harbour", cat:"design", catLabel:"Web design", img:"https://picsum.photos/seed/harbour/600/450"},
-  {name:"Tradefolio", cat:"dev", catLabel:"Web development", img:"https://picsum.photos/seed/tradefolio/600/450"},
-  {name:"Shiplog", cat:"dev", catLabel:"Web development", img:"https://picsum.photos/seed/shiplog/600/450"},
-  {name:"Brightpath", cat:"apps", catLabel:"Applications", img:"https://picsum.photos/seed/brightpath/600/450"},
+  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/n.png"},
+  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nn.png"},
+  {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnn.png"},
+  {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnnn.png"},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png"},
+  {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"},
+  {name:"name of project", cat:"apps", catLabel:"Applications", img:"/assets/images/pff.png"}
 ];
 
+// Blog's Data     
 const posts = [
   {date:"Nov 12, 2025", cat:"Frontend", title:"Shipping faster React apps in 2025", excerpt:"Practical patterns for code-splitting, caching and keeping bundles lean without slowing the team down.", img:"https://picsum.photos/seed/reactapps/700/400"},
   {date:"Sep 3, 2025", cat:"CSS", title:"Component-friendly CSS that scales", excerpt:"How I structure tokens, layers and utility rules so design systems stay readable in large repos.", img:"https://picsum.photos/seed/csssystems/700/400"},
@@ -92,7 +93,7 @@ testiDots.forEach(d=>d.addEventListener('click', ()=>showTesti(+d.dataset.i)));
 setInterval(()=>showTesti((testiIndex+1)%testiSlides.length), 5000);
 
 /* ---------------- Role typewriter ---------------- */
-const roles = ["Web developer", "Computer Scientist", "Web developer", "Freelancer" , "AI Engineer"];
+const roles = ["Computer Scientist", "Web developer", "Agentic AI Engineer" ,  "Freelancer"];
 const roleEl = document.getElementById('roleText');
 let rIndex = 0, cIndex = 0, deleting = false;
 function tick(){
