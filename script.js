@@ -129,7 +129,7 @@ document.getElementById('contactForm').addEventListener('submit', e=>{
 /* ---------------- Download CV (placeholder) ---------------- */
 document.getElementById('downloadCvBtn').addEventListener('click', ()=>{
   const toast = document.getElementById('toast');
-  toast.textContent = "Add your CV file link to enable this button.";
+  toast.textContent = "My CV file link don't linked.";
   toast.classList.add('show');
   setTimeout(()=>{ toast.classList.remove('show'); toast.textContent="Message sent — thanks for reaching out!"; }, 2600);
 });
