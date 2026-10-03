@@ -1,7 +1,7 @@
 /* ---------------- Data ---------------- */
 const projects = [
-  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/n.png" , link: "https://pos-web-n.vercel.app/login"},
-  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nn.png" , link: "https://pos-web-n.vercel.app/login"},
+  {name:"Bakery Shop Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/n.png" , link: "https://pos-web-app-omega.vercel.app/login"},
+  {name:"Bakery Shop Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nn.png" , link: "https://pos-web-app-omega.vercel.app/login"},
   {name:"Mill Login Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnn.png" , link: "https://jatala-rice-mills.vercel.app/login"},
   {name:"Mill Main Page", cat:"dev", catLabel:"Web development", img:"/assets/images/nnnnn.png" , link: "https://jatala-rice-mills.vercel.app/login"},
   {name:"Food Delivery Shop", cat:"design", catLabel:"Web design", img:"/assets/images/pf.png" , link: ""},
