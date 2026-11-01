@@ -132,7 +132,7 @@ document.getElementById('downloadCvBtn').addEventListener('click', ()=>{
   // toast.textContent = "My CV file link don't linked.";
   toast.classList.add('show');
     const link = document.createElement('a');
-    link.href = '/assets/my-CV.pdf';
+    link.href = 'assets/my_CV.pdf';
     link.download = 'my-CV.pdf';
     link.click();
 
