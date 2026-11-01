@@ -129,11 +129,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     btn.textContent = 'Sending...';
 
     emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_gvd0a1a',
+        'template_9zavo7j',
         this,
         {
-            publicKey: 'YOUR_PUBLIC_KEY'
+            publicKey: '06YcrfoY50mYIcAuz'
         }
     )
     .then(() => {
