@@ -99,7 +99,7 @@ testiDots.forEach(d=>d.addEventListener('click', ()=>showTesti(+d.dataset.i)));
 setInterval(()=>showTesti((testiIndex+1)%testiSlides.length), 5000);
 
 /* ---------------- Role typewriter ---------------- */
-const roles = ["Computer Scientist", "Web developer", "Agentic AI Engineer" ,  "Freelancer"];
+const roles = ["Computer Scientist", "Web developer", "AI Engineer" ,  "Freelancer"];
 const roleEl = document.getElementById('roleText');
 let rIndex = 0, cIndex = 0, deleting = false;
 function tick(){
@@ -118,12 +118,51 @@ function tick(){
 tick();
 
 /* ---------------- Contact form ---------------- */
-document.getElementById('contactForm').addEventListener('submit', e=>{
-  e.preventDefault();
-  const toast = document.getElementById('toast');
-  toast.classList.add('show');
-  e.target.reset();
-  setTimeout(()=>toast.classList.remove('show'), 3000);
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
+    const toast = document.getElementById('toast');
+    const btn = this.querySelector('.send-btn');
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    emailjs.sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        this,
+        {
+            publicKey: 'YOUR_PUBLIC_KEY'
+        }
+    )
+    .then(() => {
+
+        toast.textContent = 'Message sent successfully!';
+        toast.classList.add('show');
+
+        this.reset();
+
+    })
+    .catch((error) => {
+
+        console.error('Email Error:', error);
+
+        toast.textContent = 'Failed to send message. Try again!';
+        toast.classList.add('show');
+
+    })
+    .finally(() => {
+
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 3000);
+
+    });
+
 });
 
 /* ---------------- Download CV (placeholder) ---------------- */
